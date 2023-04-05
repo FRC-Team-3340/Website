@@ -1,5 +1,6 @@
 .navigation-bar {
-    background: rgb(90, 153, 253);
+    /*background: rgb(90, 153, 253);*/
+    background: linear-gradient(.25turn, rgb(90, 153, 253), rgb(0, 11, 116));
     font-family: 'Chakra Petch', sans-serif;
     font-weight: bold;
 }
