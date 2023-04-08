@@ -1,23 +1,25 @@
-import {useState} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
+import Showcase from "./components/showcase/showcase"
 import reactLogo from './assets/react.svg'
+import Tilt from "./components/tilt-effect/tilt"
 import './App.css'
-
 function App() {
     const [count, setCount] = useState(0)
 
-    const tilt_defaultOptions = {
-        reverse: false,
-        max: 35,
-        perspective: 1000,
-        scale: 1.1,
-        speed: 1000,
-        transition: true,
-        axis: null,
-        reset: true,
-        easing: "cubic-bezier(.03,.98,.52,.99)",
-    }
+    const root = useRef(null)
+
+    useEffect(() => {
+    })
+
+
     return (
         <div className="App">
+            <Showcase/>
+            <div id={"cards"}>
+                <div className={"card"}>
+
+                </div>
+            </div>
         </div>
     )
 }
